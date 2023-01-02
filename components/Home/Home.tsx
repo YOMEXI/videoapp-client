@@ -13,7 +13,7 @@ const Home = ({ type }: HomePage) => {
 
   useEffect(() => {
     const fetchVideos = async () => {
-      const { data } = await axios.get(`/video/${type}`);
+      const { data } = await axios.get(`/api/video/${type}`);
       setVideos(data);
     };
 

@@ -32,9 +32,11 @@ const SingleVideo = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const videoRes: any = await axios.get(`/video/find/${router.query.id}`);
+        const videoRes: any = await axios.get(
+          `/api/video/find/${router.query.id}`
+        );
         const channelRes: any = await axios.get(
-          `/users/find/${videoRes.data.userId}`
+          `/api/users/find/${videoRes.data.userId}`
         );
 
         dispatch(fetchSuccess(videoRes.data));

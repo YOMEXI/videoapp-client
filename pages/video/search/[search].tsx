@@ -19,7 +19,7 @@ const Search = ({ type }: HomePage) => {
 
   useEffect(() => {
     const fetchVideos = async () => {
-      const { data } = await axios.get(`/video/search?q=${query}`);
+      const { data } = await axios.get(`/api/video/search?q=${query}`);
       setVideos(data);
     };
 

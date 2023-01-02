@@ -14,7 +14,7 @@ const Comment = ({ comment }: CommentType) => {
     const fetchComment = async () => {
       try {
         const channelRes: any = await axios.get(
-          `/users/find/${comment.userId}`
+          `/api/users/find/${comment.userId}`
         );
 
         setChannel(channelRes.data);
