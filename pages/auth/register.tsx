@@ -29,7 +29,7 @@ const Login = () => {
     dispatch(loginStart());
     try {
       const { data } = await axios.post(
-        `/auth/signup`,
+        `/api/auth/signup`,
         { name, password, email },
         {
           withCredentials: true,
