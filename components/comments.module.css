@@ -1,0 +1,34 @@
+.container {
+  padding: 1rem;
+}
+
+.newcomment {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.input {
+  display: block;
+  outline: none;
+  width: 100%;
+  font-size: 18px;
+}
+
+.textarea {
+  width: 100%;
+}
+
+.button {
+  padding: 10px 10px;
+  background: #000;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: auto;
+}

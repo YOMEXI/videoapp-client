@@ -1,0 +1,33 @@
+.container {
+  margin: 25px 0px;
+  display: flex;
+  gap: 10px;
+  padding: 3rem;
+}
+
+.avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.name {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.date {
+  font-size: 13px;
+  font-weight: 400;
+  margin-left: 5px;
+}
+
+.text {
+  font-size: 13px;
+}

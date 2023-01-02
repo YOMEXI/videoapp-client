@@ -1,0 +1,182 @@
+.headerDiv {
+  background-color: var(--secondary-color);
+  height: 58px;
+  font-weight: 400;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--main-text);
+  padding: 0rem 1rem;
+}
+
+.headerDiv div {
+  display: flex;
+
+  align-items: center;
+}
+
+.headerDiv div:nth-child(1) img {
+  cursor: pointer;
+  padding: 0 1rem;
+  height: 30px;
+}
+
+.hamburger {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+}
+
+.hamburger div {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger:hover {
+  background-color: var(--secondary-light-color);
+}
+
+.hamburger div span {
+  width: 17.5px;
+  height: 1px;
+  background-color: var(--text-main);
+}
+
+.hamburger div span:nth-child(2) {
+  margin: 5px 0;
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  position: relative;
+  /* min-width: 650px; */
+}
+
+.searchBox {
+  width: 100%;
+  position: relative;
+}
+
+.searchBox input {
+  outline: none;
+  background-color: var(--primary-color);
+  color: var(--text-main);
+  font-size: 16px;
+  padding: 9px 6px;
+  width: 100%;
+  border: 1px solid var(--secondary-light-color);
+}
+
+.searchBox span {
+  cursor: pointer;
+}
+
+.searchBtn {
+  cursor: pointer;
+  margin-left: 10px;
+  height: 38px;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+
+  background-color: var(--secondary-light-color);
+}
+
+.headerDiv div:nth-child(3) img {
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+}
+
+.profileContainer span {
+  margin-right: 25px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.profileContainer img {
+  cursor: pointer;
+  padding: 4px;
+  background: #fff;
+}
+
+.profileBtns {
+  border: 1px solid var(--text-main);
+  border-radius: 5px;
+  z-index: 3;
+  position: absolute;
+  top: 60px;
+  padding: 10px 0;
+  box-sizing: border-box;
+  right: 20px;
+  background-color: var(--secondary-color);
+  width: 25%;
+  color: var(--text-main);
+}
+
+.avatarInfo {
+  padding: 4px 10px;
+}
+
+.avatarInfo img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.horizontalLine {
+  width: 100%;
+  background-color: var(--hover-text-color);
+  height: 1px;
+  margin: 8px 0px;
+  position: relative;
+  border-radius: 4px;
+  position: relative;
+}
+
+.profileTab {
+  display: flex;
+  align-items: center;
+  padding: 7px 20px;
+  cursor: pointer;
+  transition: 0.2s;
+  gap: 1rem;
+}
+
+.profileTab:hover {
+  background-color: var(--secondary-light-color);
+}
+
+.profileTab span {
+  font-size: 30px;
+}
+
+.profileTab p {
+  margin: 0;
+  font-size: 15px;
+}
+
+.brand {
+  height: 50px;
+  width: 50px;
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 768px) {
+  .mobile {
+    display: none !important;
+  }
+
+  .profileBtns {
+    width: 50%;
+  }
+}

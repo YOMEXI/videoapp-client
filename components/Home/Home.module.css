@@ -1,0 +1,40 @@
+.mainbox {
+  display: flex;
+  gap: 2rem;
+  position: relative;
+}
+
+.mainImg {
+  background-image: url("/img/img2.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+}
+
+.maintext {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  font-size: 18px;
+  padding: 1rem;
+  background: #fff;
+  color: #000;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.maintext:hover {
+  background: #000;
+  color: #fff;
+}
+
+.homeCards {
+  display: flex;
+  padding: 1rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
